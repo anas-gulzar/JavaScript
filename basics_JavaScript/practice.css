@@ -1,0 +1,27 @@
+div{
+    height:100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    display:inline-block;
+    margin-left: 30px;
+    margin-top: 50px;
+   
+}
+
+div:hover{
+    transform: translate(50px,50px);
+    transition: all 1.5s ease-out ;
+}
+
+@media (max-width: 200px) {
+    div{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px)  {
+    div{
+        background-color: brown;
+    }
+}
