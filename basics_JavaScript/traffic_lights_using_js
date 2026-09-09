@@ -1,1 +1,19 @@
+console.log("we are making traffic lights usign 'if' ");
 
+let color = prompt("enter a color :");
+
+if(color == "red"){
+    console.log("stop!");
+}
+
+else if(color == "yellow"){
+    console.log("wait");
+}
+
+else if(color == "green"){
+    console.log("go");
+}
+
+else{
+    console.log("invalid input");
+}
