@@ -1,1 +1,29 @@
+let a = Number(prompt("enter first value : "));
+let operator = prompt("enter operator (+ - x / %) :");
+let b = Number(prompt("enter second value : "));
 
+switch (operator){
+    case "+":
+        console.log(a+b);
+        break;
+
+    case "-":
+        console.log(a-b);
+        break;
+
+    case "x" :
+        console.log(a*b);
+        break;
+
+    case "/" :
+        console.log(a/b);
+        break;
+
+    case "%":
+        console.log(a%b);
+        break;
+
+    default:
+        console.log("invalid input!");
+        break;
+}
