@@ -7,7 +7,7 @@ if(color == "red"){
 }
 
 else if(color == "yellow"){
-    console.log("wait");
+    console.log("slow down");
 }
 
 else if(color == "green"){
