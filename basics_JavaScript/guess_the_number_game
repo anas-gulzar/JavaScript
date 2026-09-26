@@ -1,1 +1,17 @@
+let max = prompt("Enter max value");
 
+let value = Math.floor(Math.random() * max) + 1;
+
+let guess = prompt("Guess the number!");
+
+while(true){
+    if(guess == value){
+        console.log("Correct guess!");
+         console.log(value);
+        break;
+    }else if(guess > value){
+       guess = prompt("Your guess is large, Try again!");
+    }else{
+       guess = prompt("Your guess is small, Try again!");
+    }
+}
