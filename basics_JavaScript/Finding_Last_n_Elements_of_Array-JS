@@ -1,1 +1,20 @@
+let s = Number(prompt("Enter Size of Array"));
+let arr = [];
 
+for(let j=0; j<s; j++){
+    arr[j] = Number(prompt("Enter Element of Array"));
+}
+
+let n = Number(prompt("Enter Size of n"));
+
+let size = s - n ;
+
+let newArr = [];
+
+let x = 0;
+for(let i=size; i<s; i++){
+    newArr[x] = arr[i];
+    x++;
+}
+
+console.log(`last n Elements of Array : ${newArr}`);
