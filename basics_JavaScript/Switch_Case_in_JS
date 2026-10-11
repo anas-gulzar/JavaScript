@@ -1,1 +1,22 @@
+let input = Number(prompt("enter quarter number"));
 
+switch(input){
+    case 1:
+        console.log("jan, feb, mar");
+        break;
+
+    case 2:
+        console.log("april, may, june");
+        break;
+
+    case 3:
+        console.log("july, aug, sep");
+        break;
+
+    case 4:
+        console.log("oct, nov, dec");
+        break;
+
+    default:
+        console.log("invalid input!");
+}
