@@ -1,1 +1,11 @@
+let num1 = Number(prompt("Enter first grp of numbers"));
+let num2 = Number(prompt("Enter second grp of Numbers"));
 
+let digit1 = num1 % 10 ;
+let digit2 = num2 % 10 ;
+
+if(digit1 == digit2){
+    console.log("same last digits");
+}else{
+    console.log("last digit is not same");
+}
