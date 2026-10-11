@@ -1,1 +1,21 @@
+let s = Number(prompt("Enter Size of Array"));
+let arr = [];
 
+for(let j=0; j<s; j++){
+    arr[j] = Number(prompt("Enter Element of Array"));
+}
+
+let n = Number(prompt("Enter Size of n"));
+
+if(n > s){
+    alert("n can't be greater than Array size!")
+}else{
+let newArr = [];
+
+for(let i=0; i<n; i++){
+    newArr[i] = arr[i];
+}
+
+console.log(`First n Elements of Array are : ${newArr}`);
+
+}
