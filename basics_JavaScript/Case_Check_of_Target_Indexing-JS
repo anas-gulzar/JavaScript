@@ -1,1 +1,12 @@
+let str = prompt("Enter a String");
 
+let i = Number(prompt("Enter Target Indexing"));
+
+if(str[i] >= 'a' && str[i] <= 'z' ){
+    console.log("Target Element is Lower");
+}
+else if(str[i] >= 'A' && str[i] <= 'Z'){
+    console.log("Target Element is  Uppercase");
+} else {
+    console.log("not an alphabet");
+}
