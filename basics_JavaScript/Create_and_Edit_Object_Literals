@@ -1,1 +1,10 @@
+const person = {
+    name : "anas",
+    age : "18",
+    city : "U.P."
+};
 
+person.city = "newyork";
+person.country = "united states";
+
+console.log(person);
