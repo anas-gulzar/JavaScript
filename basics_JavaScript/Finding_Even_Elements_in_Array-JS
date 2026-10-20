@@ -1,1 +1,5 @@
+let arr = [1, 2, 3, 4];
 
+let ans = arr.filter((el) => el % 2 == 0);
+
+console.log(`even elements in array : ${ans}`);
