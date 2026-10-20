@@ -1,1 +1,11 @@
+let arr = [1, 2, 3, 4, 7, 9];
 
+let ans = arr.reduce((max, el) => {
+    if(max < el){
+        return el;
+    }else{
+        return max;
+    }
+});
+
+console.log(`maximum element in array : ${ans}`);
