@@ -1,1 +1,16 @@
+const student = {
+  id: 101,
+  info: { name: "Anas", city: "Aligarh" },
+  marks: [85, 90]
+};
 
+const {
+    info : {name : studentName, city : homeTown},
+    marks : [firstMarks],
+    country = "india"
+} = student;
+
+console.log(`name : ${studentName}`);
+console.log(`city : ${homeTown}`);
+console.log(`firstmarks : ${firstMarks}`);
+console.log(`country : ${country}`);
