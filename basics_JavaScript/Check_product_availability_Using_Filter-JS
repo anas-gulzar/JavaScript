@@ -1,1 +1,8 @@
+const products = [
+  { title: "T-shirt", inStock: true, rating: 4.2 },
+  { title: "Shoes", inStock: false, rating: 4.8 },
+  { title: "Cap", inStock: true, rating: 3.9 },
+  { title: "Watch", inStock: true, rating: 4.5 }
+];
 
+let available = console.log(products.filter(items => items.inStock && items.rating > 4));
