@@ -1,1 +1,14 @@
+const userSettings = {
+  theme: "light",
+  notifications: true,
+  fontSize: 14
+};
 
+const updatedSettings = {
+    ...userSettings,
+    theme : "dark",
+    language : "eng"
+};
+
+console.log(userSettings);
+console.log(updatedSettings);
