@@ -1,1 +1,14 @@
+const products = [
+  { name: "Laptop", price: 45000, inStock: true },
+  { name: "Headphones", price: 3500, inStock: false },
+  { name: "Monitor", price: 18000, inStock: true },
+  { name: "SSD", price: 4500, inStock: true }
+];
 
+let available = products.filter((curr) => {
+    return curr.inStock;
+}).map((curr) => {
+    return curr.name;
+});
+
+console.log(available);
