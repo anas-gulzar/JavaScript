@@ -1,1 +1,14 @@
+const movie = {
+  id: 1,
+  title: "Inception",
+  year: 2010,
+  genre: "Sci-Fi",
+  director: "Nolan"
+};
 
+const { id : serialNumber, title : movieName , ...details  } = movie;
+
+console.log(movie);
+console.log(serialNumber);
+console.log(movieName);
+console.log(details);
