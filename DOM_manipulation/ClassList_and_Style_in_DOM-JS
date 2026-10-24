@@ -1,1 +1,11 @@
+let div = document.getElementById('card');
 
+div.style.backgroundColor = "lightGrey";
+div.style.border = "2px solid black";
+
+let statusCheck = div.classList.contains('active');
+
+if(statusCheck === false){
+    div.classList.remove('card-box');
+    div.classList.add('active');
+}
