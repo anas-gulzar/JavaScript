@@ -1,1 +1,12 @@
+let img = document.querySelector('img');
+let status = img.getAttribute('data-status');
 
+if(status === 'inactive'){
+    img.setAttribute('data-status', 'active');
+}
+
+let anchor = document.getElementById('cta-link');
+
+anchor.setAttribute('href' , 'https://github.com');
+anchor.getAttribute('href');
+anchor.setAttribute('target', '_blank');
