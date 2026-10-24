@@ -1,1 +1,3 @@
+let h1 = document.getElementById('main-heading');
 
+h1.innerText = "welcome Anas!"
