@@ -1,1 +1,13 @@
+let btn = document.createElement('button');
+btn.innerText = "Add Task";
+let div = document.querySelector('#container');
+div.append(btn);
 
+let ul = document.createElement('ul');
+div.append(ul);
+
+for(let i=0; i<3; i++){
+    let list = document.createElement('li');
+    list.innerText = `Task ${i+1}`;
+    ul.append(list);
+}
