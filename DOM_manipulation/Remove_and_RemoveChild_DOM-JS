@@ -1,1 +1,8 @@
+let para = document.querySelector(".alert");
 
+para.remove();
+let btn = document.querySelector("#dismiss-btn");
+
+let div = document.querySelector('#notification-box');
+
+div.removeChild(btn);
