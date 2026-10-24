@@ -1,1 +1,5 @@
+let list = document.getElementById('current-item');
 
+list.parentElement.style.backgroundColor = "skyBlue";
+list.previousElementSibling.style.color = "red";
+list.nextElementSibling.style.color = "green";
