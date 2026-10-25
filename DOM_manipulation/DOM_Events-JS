@@ -1,1 +1,9 @@
+let btn = document.querySelector('button');
 
+btn.onclick = function(){
+    console.log("button clicked");
+};
+
+btn.onmouseenter = function(){
+    console.log('hua bhai hua !');
+};
