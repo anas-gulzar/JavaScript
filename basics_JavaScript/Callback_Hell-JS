@@ -1,1 +1,18 @@
+let h1 = document.querySelector("h1");
 
+function changeSize(size, delay , name, nextSize){
+    setTimeout(()=>{
+        h1.style.fontSize = size;
+        h1.innerText = name;
+        
+    if(nextSize) nextSize();
+}, delay)
+}
+
+changeSize('20px', 500 ,"anas",()=>{
+    changeSize('50px',600, "Gulzar", ()=>{
+        changeSize("80px", 600, "Welcome!", ()=>{
+            changeSize('110px',600, "here");
+        })
+    })
+});
