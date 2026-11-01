@@ -1,1 +1,26 @@
+function saveToDb (data , success, failure){
+    let internetSpeed = Math.floor(Math.random()*10)+1;
+
+    if(internetSpeed > 4){
+        success();
+    }else{
+        failure();
+    }
+}
+
+saveToDb("I love Coding", ()=>{
+    console.log(`Success1 : Your data1 is saved to DB`);
+    saveToDb("Anas Gulzar", ()=>{
+        console.log(`Success2 : Your data2 is saved to DB`);
+        saveToDb("Third Data",()=>{
+            console.log(`Success3 : Your data3 is saved to DB`);
+        },()=>{
+            console.log("failure3 : failed to save Data");
+        })
+    }, ()=>{
+        console.log("failure2 : failed to save Data");
+    })
+}, ()=>{
+    console.log("failure1 : failed to save Data");
+} );
 
