@@ -1,1 +1,27 @@
+let h1 = document.querySelector('h1');
 
+function changeColor(color, delay){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+        h1.style.color = color;
+        resolve("colour changed");
+    }, delay);
+    })
+}
+
+let request = changeColor("red", 1000);
+request.then(()=>{
+    console.log("colour changed to red");
+    return changeColor("blue", 1000);
+})
+.then(()=>{
+    console.log("colour changed to blue");
+    return changeColor("yellow", 1000);
+})
+.then(()=>{
+    console.log("colour changed ton yellow");
+    return changeColor("green", 1000);
+})
+.then(()=>{
+    console.log("colour changed to green");
+})
